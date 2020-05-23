@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add point on map
+    <ion-buttons (click)="close()" right><ion-icon name="close"></ion-icon></ion-buttons>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Enter Address</ion-label>
+    <ion-input [(ngModel)]="address" placeholder="Address Line"></ion-input>
+  </ion-item>
+    
+  <div class="ion-padding">
+    <ion-button color="primary" type="submit" (click)="search()" class="ion-no-margin">search</ion-button>
+  </div>
+
+  <p id="output"></p>
+
+  <ion-item>
+    <ion-label position="stacked">Type of item</ion-label>
+    <ion-select [(ngModel)]="item" placeholder="Enter type of item">
+      <ion-select-option value="ventilator">Ventilator</ion-select-option>
+      <ion-select-option value="mask">Mask</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Enter Quantity</ion-label>
+    <ion-input [(ngModel)]="quantity" type="number" placeholder="quantity of item"></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="stacked">Any note?</ion-label>
+    <ion-input [(ngModel)]="note" placeholder="Enter description"></ion-input>
+  </ion-item>
+
+  <br/>
+
+  <div class="ion-text-center">
+    <ion-button color="light" (click)="close()" >Close</ion-button>
+    <ion-button color="dark" (click)="add()" >Add Item</ion-button>
+  </div>
+  
+</ion-content>

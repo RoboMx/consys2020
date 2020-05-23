@@ -1,0 +1,22 @@
+ion-icon {
+    position: absolute;
+    right: 11px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+ion-buttons {
+    position: absolute;
+    display: contents;
+}
+
+body {
+    margin: 0;
+}
+
+#map { position: inherit; top:0; bottom:0; right:0; left:0; width:100%; height:300px;}
+    .gform_wrapper ul li.gfield.gfield_html .leaflet-container img { max-width: none!important;}
+
+    .my-leaflet-map-container img {
+        max-height: none;
+    }
